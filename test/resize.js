@@ -24,7 +24,8 @@
 					to: 360,
 					suff: 'deg)'
 				}
-			}
+			},
+			'debug': true
 		});
 
 		scrolldo.init();

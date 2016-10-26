@@ -6,14 +6,14 @@
 
 		var scrolldo = new ScrollDo({
 			start: {
-				whenElement: 'middle',
-				is: 0,
-				fromViewport: 'middle'
+				whenElement: 'top',
+				is: '30vh',
+				fromViewport: 'top'
 			},
 			end: {
-				whenElement: 'bottom',
-				is: 0,
-				fromViewport: 'middle'
+				whenElement: 'top',
+				is: '-200vh',
+				fromViewport: 'bottom'
 			},
 			animated: '.animated-element',
 			observed: '.observed-element',
@@ -26,7 +26,7 @@
 				}
 			},
 			'debug': true
-		});
+		}); 
 
 		scrolldo.init();
 	});
