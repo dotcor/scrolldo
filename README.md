@@ -1,10 +1,7 @@
 # scrolldo
 Scroll-tied animations for webpages
 
-
-
 ```
-
 $('.animated-element').scrollDo({
 	start: {
 		whenElement: 'top' // top, middle, bottom, (of the element)
@@ -39,4 +36,8 @@ TODO:
 
 * keyframe styles { 0:, 100: }
 * include easing function for path calculation
+* make cool demo with (snowflakes / 3d / train)
+* make demo with skrollr - like structure - many elements 
+* test performance for many elements
+* try scrollDo as a singleton 
 * conditional execution - let user pass function returning Boolean - useful if the element should animate on mobile 
