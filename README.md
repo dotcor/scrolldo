@@ -20,9 +20,11 @@ $('.animated-element').scrollDo({
 	observed: '.observed-element',
 	properties: {
 		top: {
-			from: 100,
-			to: 900,
 			suff: 'px'
+			keyframe: {
+				"0": 100,
+				"100": 900
+			}
 		},
 		rotate: {
 			from: 0,
@@ -30,14 +32,11 @@ $('.animated-element').scrollDo({
 			suff: 'deg'
 		}
 	}
-
-	// ketframe style ?
-	// 0%
-	// 60%
-	// 100%
-	// 
-	// easing func !
-	// 
-	// conditional
 });
 ```
+
+TODO:
+
+* keyframe styles { 0:, 100: }
+* include easing function for path calculation
+* conditional execution - let user pass function returning Boolean - useful if the element should animate on mobile 
