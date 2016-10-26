@@ -59,7 +59,7 @@ ScrollDo.prototype.init = function(/*optionalParam*/) {
 	if ( this.opts.debug ) {
 		var $currentDebugger = $('#debug');
 
-		_this.debugger = $currentDebugger.length ? $currentDebugger : $('<div id="debug" />').appendTo('body');
+		_this.debugger = $currentDebugger.length ? $currentDebugger : $('<pre id="debug" />').appendTo('body');
 	}
 
 	// attach handlers
